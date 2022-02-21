@@ -21,6 +21,7 @@ builder.Services.AddDbContext<DataContext>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//Register Interfaces
 builder.Services.AddScoped<IProductService, ProductService>();
 
 var app = builder.Build();

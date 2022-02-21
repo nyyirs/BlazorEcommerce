@@ -1,13 +1,17 @@
 ﻿.media-img {
-    max-height: 500px;
-    max-width: 500px;
+    max-height: 200px;
+    max-width: 200px;
     border-radius: 6px;
-    margin: 0 10px 10px 10px;
+    margin-bottom: 10px;
+    transition: transform .2s;
 }
 
+    .media-img:hover {
+        transform: scale(1.1);
+    }
+
 .media-img-wrapper {
-    max-width: 500px;
-    max-height: 500px;
+    width: 200px;
     text-align: center;
 }
 
@@ -15,14 +19,9 @@
     color: green;
 }
 
-
 @media (max-width: 1023.98px) {
     .media {
         flex-direction: column;
-    }
-
-    .media-img {
-        max-width: 300px;
     }
 
     .media-img-wrapper {
